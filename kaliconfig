@@ -1,0 +1,16 @@
+sudo su
+sudo apt install build-essential git vim libxcb-util-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+
+git clone https://github.com/baskerville/bspwm.git
+git clone https://github.com/baskerville/sxhkd
+cd bspwm
+make 
+sudo make install 
+cd ..
+cd sxhkd
+make 
+sudo make install
+sudo apt install libxinerama1 libxinerama1-dev
+apt install hcxtools
+
+apt install kitty
