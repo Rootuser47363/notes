@@ -1,0 +1,43 @@
+# Configuring FoxyProxy, Burp Suite and Firefox
+
+This document provides a step-by-step guide to configure FoxyProxy, Burp Suite and Firefox to intercept browser traffic.
+
+## Table of Contents
+
+- FoxyProxy Configuration
+- Burp Suite Configuration
+- Firefox Configuration
+- Burp Suite certificate installation
+
+## FoxyProxy Configuration
+
+1. Install the FoxyProxy Standard extension in Firefox.
+2. Click on the FoxyProxy icon and select "Options".
+3. Click "Add" to add a new proxy.
+4. Enter the proxy details (IP address and port).
+5. Save the configuration.
+
+## Burp Suite configuration
+
+1. Open Burp Suite.
+2. Go to the "Proxy" tab and then to the "Options" sub-tab.
+3. Make sure the proxy is listening and that the details match what you entered in FoxyProxy.
+
+## Firefox Configuration
+
+1. Open Firefox and go to "Options".
+2. In the "Network" section, click on "Settings".
+3. Select "Manual Proxy Settings" and enter the proxy details.
+4. Make sure to check "Use this proxy for all protocols".
+5. Save the settings.
+
+You should now be able to intercept your browser traffic with Burp Suite through FoxyProxy.
+
+## Installing the Burp Suite certificate
+
+1. In Burp Suite, go to the "Proxy" tab and then to the "Options" sub-tab.
+2. Click on the "Import / Export CA Certificate" button.
+3. Export the certificate in DER format.
+4. Open Firefox and go to
+
+Translated with DeepL.com (free version)
