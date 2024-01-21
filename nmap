@@ -1,0 +1,1 @@
+└──╼ #nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn 10.10.11.229 -oN escaneo
