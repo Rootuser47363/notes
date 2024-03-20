@@ -1,0 +1,79 @@
+```markdown
+# Comandos de Wifite
+
+Bienvenido a la guía de comandos de Wifite, una poderosa herramienta de auditoría de redes inalámbricas. En esta sección, encontrarás una descripción detallada de los comandos clave de Wifite, junto con ejemplos de uso para cada uno de ellos.
+
+---
+
+## Descripción General
+
+Wifite es una herramienta de auditoría de redes inalámbricas que automatiza el proceso de detección, ataque y seguridad de redes Wi-Fi. Permite a los usuarios realizar auditorías de seguridad en redes inalámbricas de una manera rápida y eficiente.
+
+---
+
+## Lista de Comandos
+
+- **`-wep`**: Este comando se utiliza para enfocarse únicamente en redes WEP.
+```bash
+wifite -wep
+```
+**Ejemplo de uso:** `wifite -wep`
+
+- **`-wps`**: Este comando se utiliza para enfocarse únicamente en redes WPS.
+```bash
+wifite -wps
+```
+**Ejemplo de uso:** `wifite -wps`
+
+- **`-wpa`**: Este comando se utiliza para enfocarse únicamente en redes WPA. Funciona con `-wps -wep`.
+```bash
+wifite -wpa
+```
+**Ejemplo de uso:** `wifite -wpa`
+
+- **`-wepca <n>`**: Este comando especifica el número mínimo de IVs requeridos para comenzar el ataque.
+```bash
+wifite -wepca <n>
+```
+**Ejemplo de uso:** `wifite -wepca 5000`
+
+- **`-crack <dic>`**: Este comando se utiliza para descifrar handshakes de WPA utilizando un archivo de diccionario específico.
+```bash
+wifite -crack <dic>
+```
+**Ejemplo de uso:** `wifite -crack wordlist.txt`
+
+- **`-dict <file>`**: Este comando permite especificar un diccionario personalizado para el ataque WPA.
+```bash
+wifite -dict <file>
+```
+**Ejemplo de uso:** `wifite -dict custom_dict.txt`
+
+- **`-pow [min_power]`**: Este comando ataca cualquier objetivo con una señal mínima especificada.
+```bash
+wifite -pow [min_power]
+```
+**Ejemplo de uso:** `wifite -pow -50`
+
+- **`-first [attack_max]`**: Este comando ataca los primeros objetivos especificados.
+```bash
+wifite -first [attack_max]
+```
+**Ejemplo de uso:** `wifite -first 10`
+
+---
+
+## Uso del Diccionario RockYou
+
+Para utilizar Wifite con el popular diccionario de contraseñas RockYou, puedes ejecutar el siguiente comando:
+```bash
+wifite --dict /usr/share/wordlists/rockyou.txt
+```
+Este comando utilizará el diccionario RockYou para intentar descifrar los handshakes de WPA. Asegúrate de tener permisos adecuados para acceder al archivo de diccionario y de utilizar la herramienta de manera ética y legal.
+
+---
+
+¡Recuerda siempre utilizar Wifite de manera ética y legal! El uso indebido de estas herramientas puede tener consecuencias legales.
+
+¡Explora y audita redes inalámbricas de forma responsable!
+```
