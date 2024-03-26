@@ -1,0 +1,18 @@
+Para crackear un archivo .cap con Hashcat y la lista de contraseñas rockyou, puedes usar el siguiente comando:
+
+```bash
+hashcat -m 2500 -a 0 archivo.cap /ruta/a/rockyou.txt
+  hashcat -m 22000 -a 0 archivo.hccapx /ruta/a/rockyou.txt
+
+```
+
+Aquí está lo que significa cada parte del comando:
+
+- `-m 2500`: Este es el modo de hash. `2500` es el modo para WPA/WPA2.
+- `-a 0`: Este es el modo de ataque. `0` es para ataque de diccionario.
+- `archivo.cap`: Este es tu archivo .cap que contiene el handshake que quieres crackear.
+- `/ruta/a/rockyou.txt`: Esta es la ruta al archivo de la lista de contraseñas rockyou.
+
+Por favor, asegúrate de reemplazar `archivo.cap` y `/ruta/a/rockyou.txt` con la ruta y el nombre de tu archivo .cap y la lista de contraseñas rockyou, respectivamente.
+
+Es importante mencionar que el cracking de contraseñas puede ser un proceso que consume mucho tiempo y recursos, dependiendo de la complejidad de la contraseña. Por favor, úsalo de manera responsable y siempre con permiso. ¡Espero que esto te ayude! 😊
